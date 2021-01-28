@@ -1,7 +1,8 @@
+
 const User = require("./user");
 const Page = require("./pages");
 
-module.exports = {
-  Page,
-  User,
-};
+Page.belongsTo(User, { as: 'author'})
+
+
+module.exports = { Page, User};

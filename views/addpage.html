@@ -6,37 +6,46 @@
   <form method="POST" action="/wiki/">
     
     <div class="form-group">
-      <label for="title" class="col-sm-2 control-label">Nombre del Autor</label>
+      <label for="name" class="col-sm-2 control-label">Author</label>
       <div class="col-sm-10">
-        <input name="autor" type="text" class="form-control"/>
+        <input name="name" type="text" class="form-control"/>
       </div>
     </div>
-    
+
+
     <div class="form-group">
-      <label for="title" class="col-sm-2 control-label">Email</label>
+      <label for="email" class="col-sm-2 control-label">Author Email</label>
       <div class="col-sm-10">
-        <input name="email" type="text" class="form-control"/>
+        <input name="email" type="email" class="form-control"/>
       </div>
     </div>
-    
+
+
     <div class="form-group">
-      <label for="title" class="col-sm-2 control-label">Titulo</label>
+      <label for="title" class="col-sm-2 control-label">Page Title</label>
       <div class="col-sm-10">
         <input name="title" type="text" class="form-control"/>
       </div>
     </div>
     
     <div class="form-group">
-      <label for="title" class="col-sm-2 control-label">Contenido de la pagina</label>
+      <label for="content" class="col-sm-2 control-label">Page content</label>
       <div class="col-sm-10">
         <input name="content" type="text" class="form-control"/>
       </div>
     </div>
     
     <div class="form-group">
-      <label for="title" class="col-sm-2 control-label">Estado de la pagina</label>
-      <div class="col-sm-10">
-        <input name="status" type="text" class="form-control"/>
+      <label for="open">Open</label>
+      <div class="col-sm-1">
+        <input name="status" type="radio" value="open" checked/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="closed">Closed</label>
+      <div class="col-sm-1">
+        <input name="status" type="radio" value="closed"/>
       </div>
     </div>
 
